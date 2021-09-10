@@ -1,4 +1,5 @@
 import React from 'react';
+import {Provider} from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {
   ApolloClient,
@@ -14,12 +15,10 @@ import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Nav from './components/Nav';
-import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 
 import store from './utils/store';
-import {Provider} from 'react-redux';
 
 const httpLink = createHttpLink({
   uri: '/graphql',

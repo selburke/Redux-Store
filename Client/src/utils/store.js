@@ -1,3 +1,16 @@
-import {createStore} from 'redux'
-import  reducers  from './reducers'
-export default createStore(reducers)
+import { createStore } from "redux";
+
+import allReducer from "./reducers";
+
+const store = createStore(
+  allReducer,
+  {
+    products: [],
+    cart: [],
+    cartOpen: false,
+    categories: [],
+    currentCategory: '',
+  }
+);
+
+export default store;
