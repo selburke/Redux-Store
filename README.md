@@ -4,4 +4,4 @@
 
 * The application is a store in which the user is able to look through categories & products, as well as add these items to their cart for purchase.
 
-* Deployed Link: TBD, currently having issues with deployment.
+* Deployed Link: https://sb-redux-store.herokuapp.com/
